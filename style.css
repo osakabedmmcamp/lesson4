@@ -1,0 +1,139 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+/* 全体(=body)に対してフォント指定 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+
+  /* color: #fff; */
+  /* ↑ヘッダ領域の文字色設定としてやってみたが、無効 */
+
+  /* 見出しとナビゲーションの中央寄せ設定。 */
+  text-align: center;
+}
+
+/* ↓ヘッダ領域の文字色設定の試行錯誤 */
+
+/* header a {
+  color: #fff;
+} */
+/* ↑この指定だと、aのリンク付きリスト項目まで対象になる */
+
+h1 a {
+  /* ヘッダ領域の文字色設定として。見出し部分のaを対象とする。 */
+  color: #fff;
+}
+
+.nav-list-item {
+  /* ヘッダ領域の文字色設定として。aのリンク付きリスト項目は対象にならない。 */
+  color: #fff;
+}
+
+/* ↑ヘッダ領域の文字色設定の試行錯誤 */
+
+h1 {
+  padding-top: 10px;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+.nav-list-item {
+  margin: 0 20px;
+  /* リスト先頭の黒丸を消す */
+  list-style: none;
+  display: inline-block;
+}
+
+main {
+  background-color: #ecfcdf;
+  padding: 10px 40px 40px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.self-introduction {
+  display: flex;
+}
+
+.self-portrait {
+  width: 30%;
+  padding-right: 10px;
+}
+
+.self-portrait-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.self-introduction-box {
+  background-color: #fff;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.self-introduction-data {
+  margin: 0 10px;
+  line-height: 40px;
+  display: flex;
+}
+
+.self-introduction-title {
+  width: 100px;
+}
+
+.social-icon-box {
+  /* 自己紹介テキストの開始位置。自己紹介文領域の左右内部余白：10pxと見出し項目の横幅100pxとで110px */
+  margin-left: 110px;
+}
+
+.fa-brands {
+  padding: 0 20px 20px 0;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+}
+
+.footer-text {
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .self-introduction {
+    display: block;
+  }
+
+  .self-portrait {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .self-introduction-box {
+    width: 100%;
+  }
+}
