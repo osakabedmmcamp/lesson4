@@ -9,6 +9,12 @@
 /* 全体(=body)に対してフォント指定 */
 body {
   font-family: Arial, Helvetica, sans-serif;
+
+  /* フッタ領域は画面の最下部にする為に、画面領域を高さの最低値にする。 */
+  min-height: 100vh;
+  /* フッタ領域は画面の最下部にする為に、FlexBox化 */
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -65,6 +71,9 @@ nav {
 main {
   background-color: #ecfcdf;
   padding: 10px 40px 40px;
+
+  /* フッタ領域は画面の最下部にする為に、メインを広げる */
+  flex: 1;
 }
 
 h2 {
